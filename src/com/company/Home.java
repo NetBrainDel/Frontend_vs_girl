@@ -117,7 +117,10 @@ public class Home {
                 break;
             case 2:
                 System.out.println("Несем на улицу посадить");
- /*ТУТ ПРИВЯЗАТЬ УЛИЦУ*/return outside.;
+                System.out.println("Вы на Улица Вязов. \n Баба Яга Фрэдди ждёт выбираем: 1...?, 2...?, 3...?");
+
+                int number =scanner.nextInt();
+                 return outside.outside(number);
             case 3:
                 System.out.println("Выбрасываем вечно нельзя прятаться она вас по-любому найдет Game Over ");
                 break;

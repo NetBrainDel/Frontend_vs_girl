@@ -9,7 +9,7 @@ public class Start {
 
     public static void main(String[] args) {
 
-        Game game = new Game();
+        com.company.Game.Game game = new com.company.Game.Game();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ваша задача:\n ЖИТЬ!");

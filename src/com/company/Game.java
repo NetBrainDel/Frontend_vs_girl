@@ -1,13 +1,20 @@
-package com.company;
+package com.company.Game;
+
+import com.company.Forest;
+import com.company.Home;
+import com.company.Outside;
 
 import java.util.Scanner;
 
 public class Game {
 
-Scanner scanner = new Scanner(System.in);
 
-Home home = new Home();
-Forest forest = new Forest();
+        Scanner scanner = new Scanner(System.in);
+
+        Home home = new Home();
+        Forest forest = new Forest();
+        Outside outside = new Outside();
+
 
 
         public int going(int n) {
@@ -28,13 +35,12 @@ Forest forest = new Forest();
                     return forest.forest(number1);
 
                 case 3:
-                    System.out.println("Улица");
-                    return n;
+                    System.out.println("Вы на Улица Вязов. \n Баба Яга Фрэдди ждёт выбираем: 1...?, 2...?, 3...?");
+                    int number2 = scanner.nextInt();
+                    return outside.outside(number2);
             }
             return n;
         }
 
-
-
-
 }
+
